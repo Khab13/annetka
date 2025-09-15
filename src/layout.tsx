@@ -11,7 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-function Layout() {
+export function Layout() {
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -41,4 +41,3 @@ function Layout() {
   );
 }
 
-export default Layout;

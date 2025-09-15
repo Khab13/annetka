@@ -1,5 +1,5 @@
 import { createRoot } from "react-dom/client";
 import "./styles/index.css";
-import Layout from "./Layout";
+import { Layout } from "./layout";
 
 createRoot(document.getElementById("root")!).render(<Layout />);

@@ -10,7 +10,7 @@ export const SocialLink = ({ onClick }: ISocialLinkProps) => {
           <Button
             variant="social"
             title={link.title}
-            onClick={() => onClick(link)}
+            onClick={() => onClick?.(link)}
           />
         </div>
       ))}

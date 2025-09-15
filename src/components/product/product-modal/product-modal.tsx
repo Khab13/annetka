@@ -1,7 +1,7 @@
 import type { IProductShopModalProps } from "../type";
 import styles from "./product-modal.module.css";
 
-export const ProductShopModal = ({ shop, onClose }: IProductShopModalProps) => {
+export const ProductShopModal = ({ shop }: IProductShopModalProps) => {
   const link =
     shop === "ozon"
       ? "https://ozon.ru/your-product-link"
