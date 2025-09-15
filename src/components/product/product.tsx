@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "../../shared/ui/button/Button";
 import { Modal } from "../../shared/ui/modal/modal";
 import styles from "./product.module.css";
-import img from "../../shared/assets/images/product-img.png";                         
+import img from "../../shared/assets/images/product-img.png";
 import { ProductShopModal } from "./product-modal/product-modal";
 import type { ShopType } from "./type";
 
@@ -48,10 +48,7 @@ export const Product = () => {
 
       {isModalOpen && activeShop && (
         <Modal onClose={() => setIsModalOpen(false)}>
-          <ProductShopModal
-            shop={activeShop}
-            onClose={() => setIsModalOpen(false)}
-          />
+          <ProductShopModal shop={activeShop} />
         </Modal>
       )}
     </section>
