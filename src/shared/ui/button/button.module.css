@@ -1,0 +1,68 @@
+button {
+  cursor: pointer;
+}
+
+button span {
+  color: var(--color-button-text);
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.primary {
+  background-color: var(--color-decorative);
+  box-shadow: 0px 22px 44px 0px #71165c4d;
+}
+
+.secondary {
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+}
+
+.primary,
+.secondary,
+.orderOzon,
+.orderWildberries {
+  padding: 16px 0;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.secondary span {
+  color: var(--color-primary) !important;
+}
+
+.social {
+  line-height: 180%;
+}
+
+.primary:hover,
+.secondary:hover,
+.orderOzon:hover,
+.orderWildberries:hover {
+  border-radius: 12px;
+  transform: scale(1.1);
+  box-shadow: 1px 2px 3px rgba(202, 23, 247, 0.8);
+  border: 1px solid var(--color-primary);
+}
+
+.social span {
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "fvhr";
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.social span:hover {
+  transform: scale(1.1);
+  color: var(--color-primary);
+}
+
+.orderOzon {
+  background-color: #1b1bf8;
+}
+
+.orderWildberries {
+  background: linear-gradient(91.29deg, #cb11ab 2.31%, #5f2a87 95.78%);
+}

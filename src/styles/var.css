@@ -1,0 +1,24 @@
+:root {
+  --color-primary: #ffffff;
+  --color-secondary: #7f7f7f;
+  --color-decorative: #71165b;
+  --color-main-bg: #111111;
+  --color-bg: #010101;
+  --color-button-text: #fff;
+  --color-bg-navbar: #71165b;
+
+  --spacing-xs: 20px;
+  --spacing-sm: 30px;
+  --spacing-md: 40px;
+  --spacing-lg: 50px;
+}
+
+.light {
+  --color-primary: #000;
+  --color-secondary: #3b3939;
+  --color-decorative: #71165b;
+  --color-main-bg: #fdf8f8;
+  --color-bg: #fefefe;
+  --color-button-text: #fff;
+  --color-bg-navbar: #f8aae3;
+}

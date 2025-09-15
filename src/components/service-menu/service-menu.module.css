@@ -1,0 +1,329 @@
+.serviceMenu {
+  padding: 121px 0 0 0;
+  
+}
+
+.serviceMenuTitle {
+  font-family: "fvhr";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 130%;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-primary);
+}
+
+.customDropdown {
+  position: relative;
+  width: 100%;
+  user-select: none;
+  margin-bottom: var(--spacing-sm);
+}
+
+.dropdownSelected {
+  color: var(--color-primary);
+  padding: 16px 20px;
+  border: 1px solid var(--color-secondary);
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-family: "fvhr";
+  font-size: 18px;
+  line-height: 130%;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.open {
+  max-height: 300px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.closed {
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dropdownSelected:hover {
+  text-decoration: underline;
+  background-color: var(--color-bg);
+}
+
+.arrow {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #888;
+  transition: all 0.3s ease;
+}
+
+.arrow.arrowOpen {
+  transform: rotate(180deg);
+}
+
+.dropdownList {
+  position: absolute;
+  width: 100%;
+  top: calc(100% + 4px);
+  left: 0;
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+  border: 1px solid var(--color-secondary);
+  z-index: 10;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.dropdownItem {
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.serviceMenuDetails h2 {
+  font-family: "fvhr";
+  font-size: 18px;
+  line-height: 130%;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: var(--color-secondary);
+}
+
+.serviceMenuDetails {
+  margin-bottom: var(--spacing-md);
+}
+
+.serviceMenuDetails > p {
+  font-size: 15px;
+  line-height: 160%;
+  color: var(--color-secondary);
+  margin-bottom: var(--spacing-md);
+}
+
+.serviceMenuDetailsRow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-secondary);
+  margin-bottom: 25px;
+}
+
+.serviceMenuDetailsRow p {
+  font-size: 16px;
+  line-height: 130%;
+  color: var(--color-primary);
+}
+
+.serviceMenuDetails button {
+  margin-top: 15px;
+}
+
+.serviceMenuRowImg {
+  width: 290px;
+  height: 200px;
+}
+
+.serviceMenuRowImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*  */
+
+.serviceMenuRow {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* List styling */
+
+.serviceListItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 12px 0;
+  font-family: "fvhr";
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  column-gap: 10px;
+}
+
+.serviceListItem:hover {
+  color: var(--color-primary);
+}
+
+.serviceListItem.active {
+  color: var(--color-primary);
+}
+
+.toggleIcon {
+  display: inline-block;
+  align-items: center;
+  position: relative;
+  width: 1em;
+  height: 1em;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  font-size: 24px;
+}
+
+.toggleIcon::before {
+  content: "+";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+.toggleIcon.active::before {
+  content: "×";
+  transform: rotate(180deg); /* или scale, или любое другое */
+}
+
+.serviceMenuSidebar {
+  display: none;
+}
+
+.serviceMenuDetails {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.serviceMenuDetails.fadeOut {
+  opacity: 0;
+}
+
+.serviceMenuDetails.fadeIn {
+  opacity: 1;
+}
+
+
+.serviceMenuRowImg {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.serviceMenuRowImg.fadeOut {
+  opacity: 0;
+}
+
+.serviceMenuRowImg.fadeIn {
+  opacity: 1;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .serviceMenuTitle {
+    font-size: 48px;
+    margin-bottom: 45px;
+  }
+
+  .customDropdown {
+    display: none;
+  }
+
+  .serviceMenuSidebar {
+    display: block;
+    flex: 0 0 200px;
+  }
+
+  .serviceMenuRow {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .serviceMenuDetails {
+    flex: 1 0 400px;
+    border-left: 1px solid var(--color-secondary);
+    padding: 0 0 0 20px;
+  }
+
+  .serviceMenuDetails h2 {
+    margin-bottom: 20px;
+  }
+
+  .serviceMenuDetails > p {
+    margin-bottom: 45px;
+  }
+
+  .serviceMenuRowImg {
+    flex: 0 0 100%;
+  }
+
+  .serviceMenuDetailsRow {
+    padding: 0 0 10px 0;
+    margin-bottom: 26px;
+  }
+
+  .serviceMenuDetailsRow:last-of-type {
+    margin-bottom: 45px;
+  }
+
+  .serviceMenuDetailsRow p {
+    font-size: 18px;
+  }
+
+  .serviceMenuDetails button {
+    margin: 0;
+    width: 235px;
+    height: 60px;
+    margin: 0 25px 0 0;
+  }
+
+  .serviceMenuDetails button:last-child {
+    margin: 0;
+  }
+
+  .serviceMenuRowImg {
+    width: 714px;
+    height: 489px;
+  }
+
+  .serviceMenuRowImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .serviceMenuRow {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .serviceMenuSidebar {
+    flex: 0 0 15%;
+  }
+
+  .serviceMenuDetails {
+    flex: 0 0 45%;
+    padding-left: 20px;
+  }
+
+  .serviceMenuRowImg {
+    flex: 0 0 550px;
+    padding-left: 20px;
+  }
+
+  .serviceMenuRowImg {
+    width: 100%;
+    height: 440px;
+  }
+
+  .serviceMenuRowImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+}

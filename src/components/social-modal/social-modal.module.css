@@ -1,0 +1,120 @@
+.title {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+
+.icon {
+  width: 30px;
+  margin: -3px 0 0 10px;
+  display: inline-block;
+  object-fit: contain;
+}
+
+.text {
+  font-size: 20px;
+  color: #f4e8f6;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.link {
+  font-size: 18px;
+  color: #ffb8f5;
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.text + button {
+  background-color: #b359bf !important;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text + button span {
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.text + button:hover {
+  transform: scale(1) !important;
+  border: none !important;
+  box-shadow: 0 6px 15px rgba(181, 124, 195, 0.8) !important  ;
+}
+
+.text + button:hover span {
+  color: #f4eff7;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 22px;
+  }
+
+  .icon {
+    width: 35px;
+    margin: 0;
+  }
+
+  .text {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .text span {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1400px) {
+  .title {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+
+  .icon {
+    width: 40px;
+    margin: 0;
+  }
+
+  .text {
+    font-size: 18px;
+    color: #f4e8f6;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .text span {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .link {
+    font-size: 18px;
+    color: #ffb8f5;
+    transition: all 0.3s ease;
+  }
+
+  .link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+}

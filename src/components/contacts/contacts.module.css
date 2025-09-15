@@ -1,0 +1,143 @@
+.wrapper {
+  padding: 90px 0 0 0;
+  background-color: var(--color-bg);
+}
+
+.informationRow {
+  overflow: hidden;
+}
+
+.informationBlock {
+  margin-bottom: 55px;
+}
+
+.contactInfo {
+  margin-bottom: 35px;
+}
+
+.businessInfo {
+  margin-bottom: 45px;
+}
+
+.contactInfo,
+.businessInfo {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 15px;
+}
+
+.address,
+.phone,
+.workingHours,
+.socialMediaInfo {
+  flex: 0 0 50%;
+}
+
+.address h3,
+.phone h3,
+.workingHours h3,
+.socialMediaInfo h3,
+.map h3 {
+  font-family: "fvhr";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 15px;
+}
+
+.address p,
+.phone p,
+.workingHours p,
+.socialMediaInfo p {
+  font-size: 15px;
+  line-height: 160%;
+  color: var(--color-secondary);
+}
+
+.socialMediaInfo .socialMedia {
+  display: flex;
+  column-gap: var(--spacing-sm);
+}
+
+iframe {
+  width: 290px;
+  height: 230px;
+}
+
+@media (min-width: 768px) {
+  .informationRow {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .informationBlock {
+    margin-bottom: 0;
+  }
+
+  .contactInfo,
+  .businessInfo {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .address,
+  .phone,
+  .workingHours,
+  .socialMediaInfo {
+    max-width: 243px;
+  }
+
+  iframe {
+    width: 380px;
+    height: 435px;
+  }
+
+  .businessInfo {
+    margin-bottom: var(--spacing-sm);
+  }
+}
+
+@media (min-width: 1400px) {
+  .wrapper {
+    padding: 100px 0 0 0;
+    background-color: var(--color-bg);
+  }
+
+  .informationRow {
+    justify-content: space-around;
+  }
+
+  .informationBlock {
+    margin-bottom: 40px;
+  }
+
+  .contactInfo,
+  .businessInfo {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
+  .address h3,
+  .phone h3,
+  .workingHours h3,
+  .socialMediaInfo h3,
+  .map h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .address p,
+  .phone p,
+  .workingHours p,
+  .socialMediaInfo p {
+    font-size: 18px;
+  }
+
+  iframe {
+    width: 700px;
+    height: 505px;
+  }
+}

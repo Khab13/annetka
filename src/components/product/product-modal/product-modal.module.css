@@ -1,0 +1,30 @@
+.modalContent {
+  padding: 20px;
+  text-align: center;
+}
+
+.linkButton {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #3e0f38;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.linkButton:hover {
+  background-color: #7c8edf;
+}
+
+.title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 17px;
+
+}

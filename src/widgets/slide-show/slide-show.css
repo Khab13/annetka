@@ -1,0 +1,57 @@
+.swiper-wrapper {
+  position: relative;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary);
+  background-color: #111111;
+  opacity: 1;
+  top: 25px;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-decorative);
+  border: none;
+}
+
+/* Стрелки */
+.swiper-button-next,
+.swiper-button-prev {
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  border-radius: 50%;
+  background-color: var(--color-decorative);
+  display: none;
+}
+
+.swiper-button-prev {
+  left: -55px;
+}
+
+.swiper-button-next {
+  right: -55px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: none;
+  display: none;
+}
+
+@media (min-width: 1400px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+}

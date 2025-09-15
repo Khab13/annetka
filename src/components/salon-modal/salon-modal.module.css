@@ -1,0 +1,153 @@
+.title {
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.title span {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.title,
+.subtitle {
+  font-family: "fvhr";
+  font-weight: 400;
+  text-align: center;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  color: #71165b;
+  background-color: #f8f0fc;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.25s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 8px 2px #d197d9;
+  background-color: #fff;
+}
+
+form textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+form p {
+  color: red;
+  font-size: 10px;
+  font-weight: 700;
+  margin: -8px 0 0 10px;
+}
+
+form button {
+  background-color: #b359bf !important;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form button span {
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  transform: scale(1) !important;
+  border: none !important;
+  box-shadow: 0 6px 15px rgba(181, 124, 195, 0.8) !important  ;
+}
+
+form button:hover span {
+  color: #f4eff7;
+}
+
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid #ffffff;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .title,
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .subtitle {
+    max-width: 340px;
+    margin: 5px auto 20px auto;
+  }
+
+  form input::placeholder,
+  form textarea::placeholder {
+    font-size: 18px;
+  }
+
+  form p {
+    color: red;
+    font-size: 13px;
+    font-weight: 700;
+    margin: -8px 0 0 10px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .title,
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  form input::placeholder,
+  form textarea::placeholder {
+    font-size: 18px;
+  }
+
+  form p {
+    color: red;
+    font-size: 14px;
+    font-weight: 700;
+    margin: -8px 0 0 10px;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
