@@ -1,7 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-import "swiper/swiper-bundle.css";
 
+
+// import 'swiper/swiper-bundle.css';
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import "./slide-show.css";
 import { type SlideShowProps } from "./type";
 
@@ -49,7 +53,7 @@ export const SlideShow = <T,>({ items, renderSlide }: SlideShowProps<T>) => (
     </Swiper>
 
     <div className="swiper-button-prev">
-      <img src={imgPrev} alt="prev" />
+      <img src={imgPrev} alt="next" />
     </div>
     <div className="swiper-button-next">
       <img src={imgNext} alt="next" />
