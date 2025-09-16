@@ -17,6 +17,31 @@
   border: none;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  border-radius: 50%;
+  background-color: var(--color-decorative);
+  display: none;
+}
+
+.swiper-button-prev {
+  left: -55px;
+}
+
+.swiper-button-next {
+  right: -55px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: none;
+  display: none;
+}
+
 @media (min-width: 1400px) {
   .swiper-button-next,
   .swiper-button-prev {

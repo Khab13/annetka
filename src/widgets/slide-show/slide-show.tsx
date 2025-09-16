@@ -1,7 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-
-import "swiper/swiper-bundle.css";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import "./slide-show.css";
 import { type SlideShowProps } from "./type";
 
